@@ -256,5 +256,11 @@ document.addEventListener("click",e=>{const k=e.target.closest("[data-k]"),n=e.t
 document.addEventListener("change",e=>{if(e.target.id!="imp"||!e.target.files[0])return;const r=new FileReader();r.onload=()=>{try{st=Object.assign({d:{},f:{}},JSON.parse(r.result));save();th();render()}catch(x){alert("ملف غير صالح")}};r.readAsText(e.target.files[0])});
 addEventListener("hashchange",route);route();
 </script>
+ <footer style="text-align:center;padding:20px;margin-top:40px;border-top:1px solid #333">
+    <a href="about.html">من نحن</a> |
+    <a href="privacy.html">سياسة الخصوصية</a> |
+    <a href="contact.html">اتصل بنا</a>
+</footer>
+
 </body>
 </html>
